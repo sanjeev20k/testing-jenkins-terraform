@@ -1,5 +1,5 @@
 variable "region" {
-  default     = "us-east-1"
+  default     = "ap-south-1"
   type        = string
   description = "Region of the VPC"
 }
@@ -24,7 +24,7 @@ variable "private_subnet_cidr_blocks" {
 }
 
 variable "availability_zones" {
-  default     = ["us-east-1a", "us-east-1b"]
+  default     = ["ap-south-1a", "ap-south-1b"]
   type        = list
   description = "List of availability zones"
 }

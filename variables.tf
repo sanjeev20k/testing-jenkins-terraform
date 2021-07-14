@@ -1,14 +1,5 @@
-variable "AWS_ACCESS_KEY_ID" {
-     description = "Access key to AWS console"
-     
-}
-variable "AWS_SECRET_ACCESS_KEY" {
-     description = "Secret key to AWS console"
-     
-}
-
 variable "region" {
-  default     = "ap-southeast-1"
+  default     = "us-east-1"
   type        = string
   description = "Region of the VPC"
 }
@@ -33,7 +24,7 @@ variable "private_subnet_cidr_blocks" {
 }
 
 variable "availability_zones" {
-  default     = ["ap-southeast-1a", "ap-southeast-1b"]
+  default     = ["us-east-1a", "us-east-1b"]
   type        = list
   description = "List of availability zones"
 }

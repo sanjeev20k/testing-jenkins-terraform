@@ -51,9 +51,9 @@ pipeline {
            }
        }
 
-        stage('Apply') {
+        stage('Destroy') {
             steps {
-                sh "terraform apply -input=false tfplan"
+                sh "terraform destroy -input=false tfplan"
             }
         }
     }
